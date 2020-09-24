@@ -6,11 +6,13 @@
 int main(int argc, char *argv[]) {
 
 	int year;
+	int check;
 
 	printf("input the year : ");
 	scanf("%i", &year);
 
-	printf("is the year %i the leap year? : %i\n", year, !(year%4) && year%100 || !(year%400));
+	check = (!(year%4) && year%100) || !(year%400);
+	printf("is the year %i the leap year? : %i\n", year, check);	
 	
 	return 0;
 }

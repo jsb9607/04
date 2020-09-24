@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 	printf("input the year : ");
 	scanf("%i", &year);
 
-	check = (!(year%4) && year%100) || !(year%400);
+	check = !(year%4) && year%100 || !(year%400);
 	printf("is the year %i the leap year? : %i\n", year, check);	
 	
 	return 0;
